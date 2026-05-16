@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  CycloneDDS configuration tuned for Ouster OS0/OS1 on Ubuntu 24.04 + ROS 2 Jazzy.
+
+  Usage:
+      1) Copy this file to ~/.ros/cyclonedds.xml on the host machine.
+      2) Replace "enp4s0" and "wlp3s0" with the actual interface names of
+         the host (find them with `ip -br link show`).
+      3) Export CYCLONEDDS_URI in your shell, for example:
+            export CYCLONEDDS_URI=file://$HOME/.ros/cyclonedds.xml
+
+  See: https://github.com/BENKRID-abdenour/Ouster_Driver_CycloneDDS_Ubuntu_24.04_ROS2_Jazzy
+-->
+<CycloneDDS xmlns="https://cdds.io/config"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="https://cdds.io/config https://raw.githubusercontent.com/eclipse-cyclonedds/cyclonedds/master/etc/cyclonedds.xsd">
+    <Domain Id="any">
+        <General>
+            <Interfaces>
+                <NetworkInterface name="enp4s0" priority="default" multicast="default" presence_required="false"/>
+                <NetworkInterface name="wlp3s0" priority="default" multicast="default" presence_required="false"/>
+            </Interfaces>
+            <AllowMulticast>default</AllowMulticast>
+            <MaxMessageSize>65500B</MaxMessageSize>
+        </General>
+        <Internal>
+            <SocketReceiveBufferSize min="10MB"/>
+            <Watermarks>
+                <WhcHigh>500kB</WhcHigh>
+            </Watermarks>
+        </Internal>
+    </Domain>
+</CycloneDDS>
