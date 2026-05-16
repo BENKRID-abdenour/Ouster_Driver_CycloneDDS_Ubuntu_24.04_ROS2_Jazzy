@@ -1,0 +1,4 @@
+title: Ouster ROS 2 Driver and CycloneDDS Setup
+description: Step-by-step installation, tuning, and validation on Ubuntu 24.04 LTS with ROS 2 Jazzy Jalisco
+theme: jekyll-theme-cayman
+show_downloads: true
