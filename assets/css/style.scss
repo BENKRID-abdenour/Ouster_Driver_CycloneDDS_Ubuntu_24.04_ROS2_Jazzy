@@ -1,0 +1,187 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ============================================================
+   Bleu nordique élégant — HADRON Lab style
+   ============================================================ */
+
+/* Header avec dégradé bleu nordique profond */
+.page-header {
+  background-color: #1e3a5f;
+  background-image: linear-gradient(120deg, #0f2942 0%, #1e3a5f 50%, #2c5282 100%);
+}
+
+/* Titre principal — typographie plus marquée */
+.project-name {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Sous-titre — un peu plus de finesse */
+.project-tagline {
+  opacity: 0.92;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+/* Boutons "View on GitHub" / "Download" — style cohérent */
+.btn {
+  border-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.08);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
+}
+
+/* Liens dans le contenu — bleu cohérent avec le header */
+.main-content a {
+  color: #2c5282;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(44, 82, 130, 0.3);
+  transition: all 0.15s ease;
+}
+
+.main-content a:hover {
+  color: #1e3a5f;
+  border-bottom-color: #1e3a5f;
+}
+
+/* Titres des sections — bleu profond */
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+  color: #1e3a5f;
+}
+
+/* Bordure colorée sur H2 — touche élégante */
+.main-content h2 {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.4em;
+}
+
+/* ============================================================
+   Blocs de code — thème "One Dark" lisible
+   ============================================================ */
+
+.main-content pre {
+  background-color: #282c34;
+  border: 1px solid #3e4451;
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.main-content pre code {
+  background-color: transparent;
+  color: #abb2bf;
+  padding: 0;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.main-content code {
+  background-color: #edf2f7;
+  color: #2c5282;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-size: 0.92em;
+}
+
+/* ============================================================
+   Coloration syntaxique (One Dark Pro)
+   ============================================================ */
+
+.highlight .c,
+.highlight .c1,
+.highlight .cm,
+.highlight .cp,
+.highlight .cs,
+.highlight .cd { color: #5c6370; font-style: italic; }
+
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt { color: #c678dd; }
+
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .ss { color: #98c379; }
+
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .il { color: #d19a66; }
+
+.highlight .nt { color: #e06c75; }
+
+.highlight .na { color: #d19a66; }
+
+.highlight .nf,
+.highlight .nc { color: #61afef; }
+
+.highlight .n,
+.highlight .nv,
+.highlight .no { color: #e06c75; }
+
+.highlight .nb { color: #61afef; }
+
+.highlight .o,
+.highlight .ow,
+.highlight .p { color: #abb2bf; }
+
+.highlight .err { color: #e06c75; background-color: transparent; }
+
+.highlight,
+.highlight pre,
+figure.highlight {
+  background-color: #282c34 !important;
+}
+
+/* ============================================================
+   Tables — design plus pro
+   ============================================================ */
+
+.main-content table th {
+  background-color: #f7fafc;
+  border-bottom: 2px solid #2c5282;
+  color: #1e3a5f;
+}
+
+.main-content table tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+/* ============================================================
+   Blockquotes (encadrés ⚠️ et 💡) — accent bleu
+   ============================================================ */
+
+.main-content blockquote {
+  border-left: 4px solid #2c5282;
+  background-color: #ebf4fb;
+  color: #2d3748;
+  padding: 0.8em 1.2em;
+  margin: 1.5em 0;
+  border-radius: 0 4px 4px 0;
+}
